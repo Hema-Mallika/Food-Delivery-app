@@ -84,9 +84,9 @@ WSGI_APPLICATION = 'Online_Food_Delivery.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("postgres"),
-        "USER": os.environ.get("postgres"),
-        "PASSWORD": os.environ.get("1234"),
+        "NAME": "postgres",
+        "USER": "postgres",
+        "PASSWORD": "1234",
         "HOST": "localhost",
         "PORT": "5432",
     }
