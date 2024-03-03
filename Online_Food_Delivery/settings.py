@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
-
+pip install psycopg2
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'Online_Food_Delivery.wsgi.application'
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "1234",
